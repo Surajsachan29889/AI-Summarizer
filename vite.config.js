@@ -6,7 +6,9 @@ import { defineConfig } from 'vite';
 import { ViteAliases } from 'vite-aliases';
 import eslint from 'vite-plugin-eslint';
 import pages from './src/pages/pages.config';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = Path.dirname(__filename);
 const pagesInput = {};
